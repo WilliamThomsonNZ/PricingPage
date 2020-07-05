@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
@@ -16,10 +17,58 @@
         <div class="innerToggle"></div>
       </div>
       <div class="gridContainer">
-        <div class="card" id="card1"></div>
-        <div class="card" id="card2"></div>
-        <div class="card" id="card3"></div>
+        <div class="card" id="card1">
+          <h3>Starter</h3>
+          <h2 id="card1Text">$19</h2>
+          <ul>
+            <li>500MAUs</li>
+            <li>3 Projects</li>
+            <li>Unlimited guides</li>
+            <li>Unlimited flows</li>
+            <li>Unlimited branded themes</li>
+            <li>Email support</li>
+          </ul>
+          <button class="choosePlan">Choose Plan</button>
+        </div>
+        <div class="card" id="card2">
+          <h3>Pro</h3>
+          <h2 id="card2Text">
+            $99
+          </h2>
+          <select class="users">
+            <option>
+              2500 500MAUs
+            </option>
+            <option>
+              5000 500MAUs
+            </option>
+            <option>
+              10000 500MAUs
+            </option>
+          </select>
+          <span class="mau">Monthly active users</span>
+          <ul>
+            <li>All starter features plus:</li>
+            <li>Unlimited projects</li>
+            <li>Unlimited fully customizable themes</li>
+            <li>A dedicated Customer Success Manager</li>
+          </ul>
+          <button class="choosePlan">Choose Plan</button>
+        </div>
+        <div class="card" id="card3">
+          <h3>Enterprise</h3>
+          <h2>Let's Talk!</h2>
+          <ul>
+            <li>All Pro features</li>
+            <li>Unlimited MAUs</li>
+            <li>Dedicated enviroment</li>
+            <li>Enterprise account and administration</li>
+            <li>Premium support and services</li>
+          </ul>
+          <button class="choosePlan">Contact Us</button>
+        </div>
       </div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>

@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+:root {
+  --main-bg-color: #191b1d;
+  --card-bg: #22262c;
+  --accent-color: #bb214b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background: var(--main-bg-color);
+}
+
+.container {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #fff;
+  text-align: center;
+  width: 70%;
+}
+.card h2,
+.card h3,
+.container h1,
+.container p {
+  font-weight: normal;
+}
+
+.headerElement {
+  width: 30%;
+  height: 80px;
+  margin: 0 35%;
+  background: var(--accent-color);
+  border-radius: 0px 0px 10px 10px;
+  text-align: center;
+  min-width: 350px;
+}
+.headerElement span {
+  display: block;
+}
+.small {
+  padding-top: 15px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+.large {
+  margin-top: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.container h1 {
+  margin-top: 120px;
+}
+#toggler {
+  width: 60px;
+  height: 25px;
+  position: absolute;
+  z-index: 99;
+  left: 10%;
+  opacity: 1;
+}
+.anuallToggle {
+  left: 6%;
+  right: 0;
+  transition: all 0.2s linear;
+}
+#toggler:hover {
+  cursor: pointer;
+}
+.outerToggle {
+  width: 3%;
+  height: 30px;
+  background-color: var(--accent-color);
+  margin: 15px 47.5%;
+  border-radius: 50px;
+  position: relative;
+  min-width: 80px;
+}
+.outerToggle:hover {
+  cursor: pointer;
+}
+.innerToggle {
+  width: 25px;
+  height: 80%;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 6%;
+  top: 11%;
+  transition: all 0.2s linear;
+}
+
+.outerToggle::before {
+  content: "Billed monthly";
+  position: absolute;
+  top: 20%;
+  left: -100px;
+  font-size: 0.9rem;
+}
+
+.outerToggle::after {
+  content: "Billed anually";
+  position: absolute;
+  top: 20%;
+  right: -100px;
+  font-size: 0.9rem;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+  grid-gap: 15px;
+  margin: 50px 15%;
+  width: 70%;
+}
+.card {
+  background: var(--card-bg);
+  min-width: 400px;
+  height: 600px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.card h3 {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+.card h2 {
+  margin-top: 20px;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.card li {
+  text-align: left;
+  margin: 15px 0;
+  list-style: none;
+}
+.card li::before {
+  content: "\2022";
+  color: var(--accent-color);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.card ul {
+  margin-left: 80px;
+}
+#card2 ul {
+  margin-top: 30px;
+}
+.users {
+  padding: 10px 25px;
+  width: 50%;
+  margin: 20px 0 5px 0;
+  background: none;
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+.users option {
+  color: var(--main-bg-color);
+  background: none;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.mau {
+  display: block;
+  color: var(--accent-color);
+  font-size: 0.8rem;
+}
+
+.card ul {
+  margin-top: 80px;
+}
+
+.choosePlan {
+  position: absolute;
+  bottom: 10%;
+  left: 25%;
+  background: none;
+  border: 1px solid var(--accent-color);
+  border-radius: 5px;
+  color: #fff;
+  width: 200px;
+  height: 50px;
+  font-size: 1rem;
+  transition: all 0.2s ease-in;
+}
+.choosePlan:hover {
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
