@@ -6,14 +6,15 @@ let state = "monthly";
 
 toggler.addEventListener("click", () => {
   if (state == "monthly") {
-    document.querySelector(".innerToggle").style.right = "65%";
-    card1.textContent = "$19";
-    card2.textContent = "$99";
-    state = "annually";
-  } else {
-    document.querySelector(".innerToggle").style.right = "6%";
+    document.querySelector(".innerToggle").style.left = "65%";
+
     card1.textContent = "$228";
     card2.textContent = "$1188";
+    state = "annually";
+  } else {
+    document.querySelector(".innerToggle").style.left = "6%";
+    card1.textContent = "$19";
+    card2.textContent = "$99";
     console.log(state);
     state = "monthly";
   }
