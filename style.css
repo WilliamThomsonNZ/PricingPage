@@ -194,3 +194,14 @@ body {
   background-color: var(--accent-color);
   cursor: pointer;
 }
+
+@media (max-width: 1250px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .headerElement {
+    width: 50%;
+    margin: 0 25%;
+  }
+}
